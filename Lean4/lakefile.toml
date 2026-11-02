@@ -1,0 +1,13 @@
+name = "gghv"
+version = "0.1.0"
+keywords = ["math"]
+defaultTargets = ["GGHV"]
+
+[[require]]
+name = "mathlib"
+scope = "leanprover-community"
+rev = "v4.34.0"
+
+[[lean_lib]]
+name = "GGHV"
+roots = ["JC2.GGHV.Part1_Cases", "JC2.GGHV.Part2_Discards", "JC2.GGHV.Part3_NewtonReductions", "JC2.GGHV.Part4_Systems", "JC2.GGHV.Part5_Assembly", "JC2.GGHV.Part6_Directions", "JC2.GGHV.Part7_MonomialBracket", "JC2.GGHV.Part8_MaxSegments", "JC2.GGHV.Part9_DirectionsGeneral", "JC2.GGHV.Part10_JacobiPhi", "JC2.GGHV.Part11_D3Certificate", "JC2.GGHV.Part12_D3CertificateS5"]

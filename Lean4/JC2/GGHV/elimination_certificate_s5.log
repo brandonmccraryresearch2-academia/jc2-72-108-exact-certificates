@@ -1,0 +1,43 @@
+D2_1 -> dm4 = -d0*dm1 - d1*dm2   (coeff 2)
+D2_2 -> dm5 = -d0*dm2 - d1*dm3 - dm1**2/2   (coeff 2)
+D2_3 -> dm6 = d0*d1*dm1 - d0*dm3 + d1**2*dm2 - dm1*dm2   (coeff 2)
+D2_4 -> dm7 = d0**2*dm1 + 2*d0*d1*dm2 + d1**2*dm3 + d1*dm1**2/2 - dm1*dm3 - dm2**2/2   (coeff 2)
+D2_5 -> dm8 = d0**2*dm2 - d0*d1**2*dm1 + 2*d0*d1*dm3 + 3*d0*dm1**2/2 - d1**3*dm2 + 2*d1*dm1*dm2 - dm2*dm3   (coeff 2)
+Q1 -> dm3 = (-d1*dm1**2 - dm2**2)/(2*dm1)   (coeff 3*dm1)
+D2_7 -> dm10 = (-2*d0**3*dm1**2 - 6*d0**2*d1*dm1*dm2 + 5*d0*d1**3*dm1**2 + 3*d0*d1**2*dm2**2 - 9*d0*d1*dm1**3 + 2*d1**4*dm1*dm2 - 9*d1**2*dm1**2*dm2 - 3*d1*dm2**3 + 3*dm1**3*dm2)/(2*dm1)   (coeff 2)
+
+Remaining equations: ['Q2', 'Q4']
+Q2r = -3*(d0*dm1**3 + d1*dm1**2*dm2 + dm2**3)/(2*dm1)
+Q4r = (2*C3**23*F*dm1 + 3*d0*d1*dm1**3 + 3*d1**2*dm1**2*dm2 + 3*d1*dm2**3 - 3*dm1**3*dm2)/(2*dm1)
+Q2r, Q4r match cleared forms q2, q4.
+Cofactor identity S*q2 + T*q4 = dm1*target verified.
+
+Final coefficients (rational functions) and their denominators:
+D2_7 -> -12*C3**46*F**2*dm1 - 18*C3**23*F*dm1**3*dm2 - 27*d1*dm1**7 - 27*dm1**5*dm2**2
+D2_2 -> -24*C3**46*F**2*d0*d1*dm1 - 12*C3**46*F**2*dm1*dm2 - 36*C3**23*F*d0*d1*dm1**3*dm2 - 18*C3**23*F*dm1**3*dm2**2 - 54*d0*d1**2*dm1**7 - 54*d0*d1*dm1**5*dm2**2 + 27*d0*dm1**8 - 54*d1*dm1**7*dm2 - 27*dm1**5*dm2**3
+D2_3 -> -12*C3**46*F**2*d1**2*dm1 - 12*C3**46*F**2*dm1**2 - 18*C3**23*F*d1**2*dm1**3*dm2 - 18*C3**23*F*dm1**4*dm2 - 27*d1**3*dm1**7 - 27*d1**2*dm1**5*dm2**2 - 27*dm1**6*dm2**2
+Q2 -> 8*C3**46*F**2*d1*dm1 + 12*C3**23*F*d1*dm1**3*dm2 + 18*d1**2*dm1**7 + 18*d1*dm1**5*dm2**2 - 18*dm1**8
+Q1 -> 8*C3**46*F**2*d0*dm1 + 12*C3**23*F*d0*dm1**3*dm2 + 18*d0*d1*dm1**7 + 18*d0*dm1**5*dm2**2 + 18*dm1**7*dm2
+D2_5 -> -24*C3**46*F**2*d1*dm1 - 36*C3**23*F*d1*dm1**3*dm2 - 54*d1**2*dm1**7 - 54*d1*dm1**5*dm2**2 + 27*dm1**8
+D2_4 -> -24*C3**46*F**2*d0*dm1 - 36*C3**23*F*d0*dm1**3*dm2 - 54*d0*d1*dm1**7 - 54*d0*dm1**5*dm2**2 - 27*dm1**7*dm2
+D2_1 -> -12*C3**46*F**2*d0**2*dm1 - 12*C3**46*F**2*d1*dm1**2 - 12*C3**46*F**2*dm1*dm3 - 18*C3**23*F*d0**2*dm1**3*dm2 - 18*C3**23*F*d1*dm1**4*dm2 - 18*C3**23*F*dm1**3*dm2*dm3 - 27*d0**2*d1*dm1**7 - 27*d0**2*dm1**5*dm2**2 - 27*d0*dm1**7*dm2 - 27*d1**2*dm1**8 - 27*d1*dm1**7*dm3 - 27*d1*dm1**6*dm2**2 + 27*dm1**9 - 27*dm1**5*dm2**2*dm3
+Q4 -> 8*C3**46*F**2*dm1 + 12*C3**23*F*dm1**3*dm2 + 18*d1*dm1**7 + 18*dm1**5*dm2**2
+Distinct denominators: {1}
+
+Clearing denominator D = 1
+P_D2_1 = -12*C3**46*F**2*d0**2*dm1 - 12*C3**46*F**2*d1*dm1**2 - 12*C3**46*F**2*dm1*dm3 - 18*C3**23*F*d0**2*dm1**3*dm2 - 18*C3**23*F*d1*dm1**4*dm2 - 18*C3**23*F*dm1**3*dm2*dm3 - 27*d0**2*d1*dm1**7 - 27*d0**2*dm1**5*dm2**2 - 27*d0*dm1**7*dm2 - 27*d1**2*dm1**8 - 27*d1*dm1**7*dm3 - 27*d1*dm1**6*dm2**2 + 27*dm1**9 - 27*dm1**5*dm2**2*dm3
+P_D2_2 = -24*C3**46*F**2*d0*d1*dm1 - 12*C3**46*F**2*dm1*dm2 - 36*C3**23*F*d0*d1*dm1**3*dm2 - 18*C3**23*F*dm1**3*dm2**2 - 54*d0*d1**2*dm1**7 - 54*d0*d1*dm1**5*dm2**2 + 27*d0*dm1**8 - 54*d1*dm1**7*dm2 - 27*dm1**5*dm2**3
+P_D2_3 = -12*C3**46*F**2*d1**2*dm1 - 12*C3**46*F**2*dm1**2 - 18*C3**23*F*d1**2*dm1**3*dm2 - 18*C3**23*F*dm1**4*dm2 - 27*d1**3*dm1**7 - 27*d1**2*dm1**5*dm2**2 - 27*dm1**6*dm2**2
+P_D2_4 = -24*C3**46*F**2*d0*dm1 - 36*C3**23*F*d0*dm1**3*dm2 - 54*d0*d1*dm1**7 - 54*d0*dm1**5*dm2**2 - 27*dm1**7*dm2
+P_D2_5 = -24*C3**46*F**2*d1*dm1 - 36*C3**23*F*d1*dm1**3*dm2 - 54*d1**2*dm1**7 - 54*d1*dm1**5*dm2**2 + 27*dm1**8
+P_D2_7 = -12*C3**46*F**2*dm1 - 18*C3**23*F*dm1**3*dm2 - 27*d1*dm1**7 - 27*dm1**5*dm2**2
+P_Q1 = 8*C3**46*F**2*d0*dm1 + 12*C3**23*F*d0*dm1**3*dm2 + 18*d0*d1*dm1**7 + 18*d0*dm1**5*dm2**2 + 18*dm1**7*dm2
+P_Q2 = 8*C3**46*F**2*d1*dm1 + 12*C3**23*F*d1*dm1**3*dm2 + 18*d1**2*dm1**7 + 18*d1*dm1**5*dm2**2 - 18*dm1**8
+P_Q4 = 8*C3**46*F**2*dm1 + 12*C3**23*F*dm1**3*dm2 + 18*d1*dm1**7 + 18*dm1**5*dm2**2
+
+Final identity check D*dm1*target - sum P_i*orig_i == 0: True
+CERTIFICATE PASSED: explicit polynomial identity for the §5 principal equation.
+
+Lean-ready summary:
+  D = 1
+  target = 8*C3**69*F**3 + 18*C3**23*F*d1*dm1**6 + 27*d0*dm1**9
