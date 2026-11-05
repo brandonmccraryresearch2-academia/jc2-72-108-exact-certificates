@@ -31,6 +31,21 @@ and on its faithful transcription. This is **not** a proof of the full
 two-dimensional Jacobian conjecture. Independent mathematical and
 computational review is requested.
 
+## Relation to the Lean elimination
+
+The same `(72,108)` exclusion is now also established in Lean in the
+companion repository (`2D-Jacobian-Conjecture-Workspace`): the GGHV
+Proposition 4.3 case (8,28) split is fully eliminated there — case (2) by the
+branches (a),(b) `main_theorem` and case (1) by `branch_c_eliminated`, proved
+2026-11-04 with no hypotheses and axioms exactly
+`[propext, Classical.choice, Quot.sound]`. That is a different evidence kind
+(a Lean kernel check) from this repository's exact computer-algebra replay,
+not a replacement for it, and it does not change the conditional scope of
+*this* repository's conclusion stated above: the Lean elimination likewise
+does not claim `(72,108)` excluded unconditionally or JC(2) proved, since
+those still rest on GGHV exhaustiveness and the reduction chain, ledgered
+not re-derived.
+
 ## Contents
 
 - `paper/`: English LaTeX manuscript and compiled PDF.
